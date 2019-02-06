@@ -20,6 +20,11 @@ using namespace std;
 /**
  * @brief Class BigInteger Class to manage big 
  * 
+ * @todo 
+ *  <lu>
+ *      <li>Implement iterator with bigintegers</li>
+ *      <li></li>
+ *  </lu>
  */
 class BigInteger{
 private:
@@ -253,7 +258,7 @@ bool BigInteger::isOdd(){
  * @param k 
  * @return BigInteger 
  */
-static BigInteger combinations(int n, int k){
+BigInteger BigInteger::combinations(int n, int k){
     BigInteger aux(0);    
     return aux;
 }
@@ -264,7 +269,7 @@ static BigInteger combinations(int n, int k){
  * @param k 
  * @return BigInteger 
  */
-static BigInteger ordenations(int n, int k){
+BigInteger BigInteger::ordenations(int n, int k){
     BigInteger aux(0);    
     return aux;
 }
@@ -274,8 +279,11 @@ static BigInteger ordenations(int n, int k){
  * @param n 
  * @return BigInteger 
  */
-static BigInteger factorial(int n){
-    BigInteger aux(0);    
+BigInteger BigInteger::factorial(int n){
+    BigInteger aux(1);
+    for(int i = 1; i <= n;++i){
+        aux *= i;
+    }
     return aux;
 }
 /**
@@ -777,6 +785,8 @@ int main(int argc, char *argv[]){
     BigInteger test4(a2);
     std::cout << test0.isEven() << std::endl;
     std::cout << test1.isEven() << std::endl;
+    std::cout << test1.factorial(100) << std::endl;
+    std::cout << test1.factorial(100) << std::endl;
     // test4.digits();
     // test1.isEven();
     // test4.isEven();

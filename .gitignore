@@ -1,0 +1,20 @@
+# Don't track content of these folders
+basic/datatypes/.vscode/
+
+# Compiled source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.out
+
+# Packages #
+*.7z
+*.dmg
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
