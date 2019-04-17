@@ -23,7 +23,7 @@ using namespace std;
  * @todo 
  *  <lu>
  *      <li>Implement iterator with bigintegers</li>
- *      <li></li>
+ *      <li>Create a class that can manage decimals!!!</li>
  *  </lu>
  */
 class BigInteger{

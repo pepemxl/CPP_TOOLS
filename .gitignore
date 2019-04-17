@@ -1,5 +1,7 @@
 # Don't track content of these folders
 basic/datatypes/.vscode/
+sort/x86_64/
+
 
 # Compiled source #
 *.com
